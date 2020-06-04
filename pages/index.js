@@ -1,11 +1,10 @@
-import queryexperimenter from './queryexperimenter';
-import linkRouter from './linkRouter';
-
+// import Queryexperimenter from './QueryExperimenter';
+import LinkRouter from './LinkRouter';
+import ServerSideRendering from './ServerSideRendering';
 function IndexApp() {
   return (
     <div>Welcome To Home Page!!!
-      <linkRouter />
-      <queryexperimenter />
+      <ServerSideRendering />
     </div>
   );
 }
