@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { withRouter } from 'next/router';
 
-function linkRouter() {
+function LinkRouter() {
     return (
         <Link href="/queryexperimenter/[query_id]" as="/queryexperimenter/MMK">
             <a>Query Experimenter Page</a>
@@ -9,4 +9,4 @@ function linkRouter() {
     );
 }
 
-export default withRouter(linkRouter);
+export default withRouter(LinkRouter);

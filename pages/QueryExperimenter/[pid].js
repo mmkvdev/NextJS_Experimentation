@@ -1,12 +1,12 @@
 import useRouter from 'next/router';
-import linkRouter from './linkRouter';
 
-function queryexperimenter() {
+function pidindex() {
     const queryRouter = useRouter();
     const { query_id } = queryRouter.query;
+    console.log(query_id)
     return (
         <p>Query Parameter: {query_id}</p>
     );
 }
 
-export default queryexperimenter;
+export default pidindex;
