@@ -6,4 +6,4 @@ function Index() {
     )
 }
 
-export default withAmp(Index, { hybrid: true });
+// export default withAmp(Index, { hybrid: true });
