@@ -5,22 +5,12 @@
 import ClientSideRendering from './ClientSideRendering/ClientSideRendering';
 import Index from './AMPExperimentation/index';
 import Link from 'next/link';
+import Navbar from '../components/Navbar';
 
 function IndexApp() {
   return (
     <div>Welcome To Home Page!!!
-      <ul>
-        <li>
-          <Link href="/">
-            <a>Home</a>
-          </Link>
-        </li>
-        <li>
-          <Link href="/about">
-            <a>About</a>
-          </Link>
-        </li>
-      </ul>
+      <Navbar />
       <ClientSideRendering />
     </div>
   );
