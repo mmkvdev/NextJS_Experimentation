@@ -1,10 +1,11 @@
-import { useRouter } from 'next/router';
+import { useRouter, withRouter } from 'next/router';
 
-function QueryExperimenterPage() {
-    const router = useRouter();
-    const { id } = router.query
-    console.log(id)
-    return <h1>{id}</h1>
+function QueryExperimenterPage({ router }) {
+    //const router = useRouter();
+    //const { id } = router.query
+    // console.log(id)
+    console.log(router)
+    return <h1>{router.query.id}</h1>
 }
 
-export default QueryExperimenterPage
+export default withRouter(QueryExperimenterPage);
