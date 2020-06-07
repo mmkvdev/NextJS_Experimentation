@@ -1,13 +1,4 @@
-// import Queryexperimenter from './QueryExperimenter';
-//import LinkRouter from './LinkRouter';
-//import ServerSideRendering from './ServerSideRendering';
-// import QueryExperimenterPage from './QueryExperimenter/index';
-import ClientSideRendering from './ClientSideRendering/ClientSideRendering';
-// import Index from './AMPExperimentation / index';
-// import Link from 'next/link';
-// import Navbar from '../components/Navbar';
 import Layout from '../components/Layout';
-import Fetch from 'isomorphic-unfetch';
 import Prices from '../components/Prices';
 
 function IndexApp(props) {
