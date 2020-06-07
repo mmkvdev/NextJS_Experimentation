@@ -34,7 +34,15 @@ const Prices = (props) => {
     }
     return (
         <div>
-            {currencyList}
+            <ul className="list-group">
+                {currencyList}
+            </ul>
+            <br />
+            <select onChange={e => updateCurrency(e.target.value)}className="form-control">
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+                <option value="GBP">GBP</option>
+            </select>
         </div>
     );
 }
