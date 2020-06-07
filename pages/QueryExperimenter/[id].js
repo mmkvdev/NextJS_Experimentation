@@ -1,14 +1,10 @@
-// import getContent from "headless-cms";
+import { useRouter } from 'next/router';
 
-function QueryExperimenterPage({ post }) {
-    return <h1>{post.title}</h1>
-}
-
-QueryExperimenterPage.getInitialProps = async () => {
-    // const post = await getContent({ id: 1 })
-    return {
-        id: 1
-    }
+function QueryExperimenterPage() {
+    const router = useRouter();
+    const { id } = router.query
+    console.log(id)
+    return <h1>{id}</h1>
 }
 
 export default QueryExperimenterPage
