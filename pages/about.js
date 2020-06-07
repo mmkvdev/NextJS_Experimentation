@@ -5,8 +5,10 @@ const About = () => {
         <Layout>
             <div>
                 Welcome to About Page
-                <button onClick={() => Router.push('/QueryExperimenter/[id]','/QueryExperimenter/abs')}>GO BACK TO HOME PAGE</button>
-                <button onClick={() => Router.back()}>BACK</button>
+                <button onClick={() => Router.push('/QueryExperimenter/[id]', '/QueryExperimenter/abs')}>GO BACK TO HOME PAGE</button>
+                <div className="container">
+                    <button onClick={() => Router.back()}>BACK</button>
+                </div>
             </div>
         </Layout>
     );

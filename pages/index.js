@@ -1,5 +1,6 @@
 import Layout from '../components/Layout';
 import Prices from '../components/Prices';
+import Header from '../pages/UseRouterExperimentation/Header';
 
 function IndexApp(props) {
   return (
@@ -8,6 +9,7 @@ function IndexApp(props) {
         Welcome To Home Page!!!
       </h1>
       <Prices bpi={props.bpi} />
+      <Header />
     </Layout>
   );
 }
