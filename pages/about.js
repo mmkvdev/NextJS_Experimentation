@@ -5,7 +5,7 @@ const About = () => {
         <Layout>
             <div>
                 Welcome to About Page
-                <button onClick={() => Router.push('/')}>GO BACK TO HOME PAGE</button>
+                <button onClick={() => Router.push('/QueryExperimenter/[id]','/QueryExperimenter/abs')}>GO BACK TO HOME PAGE</button>
             </div>
         </Layout>
     );
