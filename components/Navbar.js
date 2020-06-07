@@ -13,6 +13,9 @@ const Navbar = () => {
                         <li className="nav-item">
                             <Link href="/about"><a className="nav-link">About</a></Link>
                         </li>
+                        <li className="nav-item">
+                            <Link href="/QueryExperimenter/[id]" as="/QueryExperimenter/abc"><a className="nav-link">Query Experimenter</a></Link>
+                        </li>
                     </ul>
                 </div>
             </div>
