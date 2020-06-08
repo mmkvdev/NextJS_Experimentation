@@ -4,17 +4,17 @@ export default function Header() {
     return (
         <div>
             <Link href="/">
-                <a>Home</a>
+                <button>Home</button>
             </Link>
             <Link href="/about">
-                <a>about</a>
+                <button>about</button>
             </Link>
         </div>
     );
 }
 const Link = ({ children, href }) => {
     const router = useRouter();
-    console.log(children, href)
+    // console.log(children, href)
     const style = {
         marginRight: 10,
         color: router.pathname === href ? 'red' : 'yellow'
