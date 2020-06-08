@@ -1,6 +1,7 @@
 import Layout from '../components/Layout';
 import Prices from '../components/Prices';
 import Header from '../pages/UseRouterExperimentation/Header';
+import Home from './StaticGeneration/Home';
 
 function IndexApp(props) {
   return (
@@ -10,6 +11,7 @@ function IndexApp(props) {
       </h1>
       <Prices bpi={props.bpi} />
       <Header />
+      <Home />
     </Layout>
   );
 }
